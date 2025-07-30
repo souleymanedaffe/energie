@@ -18,7 +18,7 @@ if 'dataset' not in st.session_state:
         data_csv['Date'] = pd.to_datetime(data_csv['Mois']) + MonthEnd()
         data_csv = data_csv[['Territoire', 'Date', 'Consommation totale']]
         st.session_state.dataset = data_csv.copy()
-        st.success("✅ Données chargées automatiquement depuis 'energie.csv'")
+        
     except Exception as e:
         st.error(f"❌ Erreur lors du chargement de 'energie.csv' : {e}")
 
