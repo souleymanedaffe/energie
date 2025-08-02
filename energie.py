@@ -166,3 +166,12 @@ if not st.session_state.get("dataset", pd.DataFrame()).empty:
 else:
     st.info("ℹ️ Aucune donnée disponible. Vérifiez le fichier `energie.csv`.")
 
+# Signature
+st.markdown("""
+<div class="footer">
+    Réalisé par <strong>SOULEYMANE DAFFE - DATA SCIENTIST</strong>
+</div>
+""", unsafe_allow_html=True)
+
+
+
